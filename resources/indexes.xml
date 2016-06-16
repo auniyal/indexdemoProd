@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest databaseName="AllScripts">
+    <librarychild path="/DATA/AllScripts/Collection">
+        <indexes>
+            <metadatavalueindex compressed="false" concurrent="true" key="dds:locale" name="(DDS Internal Index) Locale values" unique="false" valuetype="string" version-info="false"/>
+            <metadatavalueindex compressed="false" concurrent="true" key="dds:subscription-element" name="(DDS Internal Index) Subscription-element" unique="false" valuetype="string" version-info="false"/>
+        </indexes>
+    </librarychild>
+    <librarychild path="/DATA/AllScripts/Collection/AuditTrail">
+        <indexes>
+            <valueindex compressed="false" concurrent="true" elementName="time" name="time" unique="false" valuetype="string" version-info="false"/>
+            <valueindex compressed="false" concurrent="true" elementName="userId" name="userId" unique="false" valuetype="string" version-info="false"/>
+        </indexes>
+    </librarychild>
+    <librarychild path="/DATA/AllScripts/Collection/WORKS/PATIENT_IORG">
+        <indexes>
+            <pathvalueindex compressed="false" concurrent="false" name="Path value index" path="/PATIENT_IORG/PATIENT_IORG-ROW/PersonID&lt;STRING&gt;" unique="false" version-info="false"/>
+        </indexes>
+    </librarychild>
+    <librarychild path="/DATA/AllScripts/Collection/WORKS/PERSON">
+        <indexes>
+            <multipathindex compressed="false" concurrent="true" lowercase="true" name="person multi path" path="/PERSON/PERSON-ROW" stopwords="true" storeversioninfo="false" unique="false" version-info="false">
+                <subpath fulltextsearch="true" includedescendants="true" scoreboost="1.0" sortable="true" type="string" valuecomparison="true" xpath="/FirstName"/>
+                <subpath fulltextsearch="true" includedescendants="true" scoreboost="1.0" sortable="true" type="string" valuecomparison="true" xpath="/LastName"/>
+                <subpath scoreboost="1.0" sortable="true" type="string" valuecomparison="true" xpath="/MiddleName"/>
+                <subpath scoreboost="1.0" type="string" valuecomparison="true" xpath="/DateOfBirth"/>
+            </multipathindex>
+        </indexes>
+    </librarychild>
+    <librarychild path="/DATA/AllScripts/Collection/WORKS/PERSON_ALIASES">
+        <indexes>
+            <pathvalueindex compressed="false" concurrent="false" name="Path value index" path="/PERSON_ALIASES/PERSON_ALIASES-ROW[ID&lt;STRING&gt; + LastName&lt;STRING&gt;]" unique="false" version-info="false"/>
+        </indexes>
+    </librarychild>
+    <librarychild path="/DATA/AllScripts/Collection/WORKS/PERSON_PHONE">
+        <indexes>
+            <pathvalueindex compressed="false" concurrent="false" name="Path value index" path="/PERSON_PHONE/PERSON_PHONE-ROW/PhoneType&lt;STRING&gt;" unique="false" version-info="false"/>
+            <pathvalueindex compressed="false" concurrent="false" name="asdf" path="/PERSON_PHONE/PERSON_PHONE-ROW/PhoneExtension&lt;STRING&gt;" unique="false" version-info="false"/>
+        </indexes>
+    </librarychild>
+    <librarychild path="/DATA/AllScripts/CollectionMetadata">
+        <indexes>
+            <metadatavalueindex compressed="false" concurrent="true" key="dds:locale" name="(DDS Internal Index) Locale values" unique="false" valuetype="string" version-info="false"/>
+            <metadatavalueindex compressed="false" concurrent="true" key="dds:subscription-element" name="(DDS Internal Index) Subscription-element" unique="false" valuetype="string" version-info="false"/>
+        </indexes>
+    </librarychild>
+    <librarychild path="/DATA/metadata/Collection">
+        <indexes>
+            <metadatavalueindex compressed="false" concurrent="true" key="dds:locale" name="(DDS Internal Index) Locale values" unique="false" valuetype="string" version-info="false"/>
+            <metadatavalueindex compressed="false" concurrent="true" key="dds:subscription-element" name="(DDS Internal Index) Subscription-element" unique="false" valuetype="string" version-info="false"/>
+        </indexes>
+    </librarychild>
+    <librarychild path="/DATA/metadata/CollectionMetadata">
+        <indexes>
+            <metadatavalueindex compressed="false" concurrent="true" key="dds:locale" name="(DDS Internal Index) Locale values" unique="false" valuetype="string" version-info="false"/>
+            <metadatavalueindex compressed="false" concurrent="true" key="dds:subscription-element" name="(DDS Internal Index) Subscription-element" unique="false" valuetype="string" version-info="false"/>
+        </indexes>
+    </librarychild>
+    <librarychild path="/test">
+        <indexes>
+            <pathvalueindex compressed="false" concurrent="false" name="Path value index" path="/foo/row/id&lt;STRING&gt;" unique="false" version-info="false"/>
+        </indexes>
+    </librarychild>
+</manifest>

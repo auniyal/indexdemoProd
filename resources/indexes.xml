@@ -22,7 +22,7 @@
             <multipathindex compressed="false" concurrent="true" lowercase="true" name="person multi path" path="/PERSON/PERSON-ROW" stopwords="true" storeversioninfo="false" unique="false" version-info="false">
                 <subpath fulltextsearch="true" includedescendants="true" scoreboost="1.0" sortable="true" type="string" valuecomparison="true" xpath="/FirstName"/>
                 <subpath fulltextsearch="true" includedescendants="true" scoreboost="1.0" sortable="true" type="string" valuecomparison="true" xpath="/LastName"/>
-                <subpath scoreboost="1.0" sortable="true" type="string" valuecomparison="true" xpath="/MiddleName"/>
+                <subpath scoreboost="2.0" sortable="true" type="string" valuecomparison="true" xpath="/MiddleName"/>
                 <subpath scoreboost="1.0" type="string" valuecomparison="true" xpath="/DateOfBirth"/>
             </multipathindex>
         </indexes>

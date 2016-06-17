@@ -23,7 +23,7 @@
                 <subpath fulltextsearch="true" includedescendants="true" scoreboost="1.0" sortable="true" type="string" valuecomparison="true" xpath="/FirstName"/>
                 <subpath fulltextsearch="true" includedescendants="true" scoreboost="1.0" sortable="true" type="string" valuecomparison="true" xpath="/LastName"/>
                 <subpath scoreboost="2.0" sortable="true" type="string" valuecomparison="true" xpath="/MiddleName"/>
-                <subpath scoreboost="2.0" type="string" valuecomparison="true" xpath="/DateOfBirth"/>
+                <subpath scoreboost="3.0" type="string" valuecomparison="true" xpath="/DateOfBirth"/>
             </multipathindex>
         </indexes>
     </librarychild>

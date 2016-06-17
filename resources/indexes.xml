@@ -1,4 +1,4 @@
-<?xml version="9.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <manifest databaseName="AllScripts">
     <librarychild path="/DATA/AllScripts/Collection">
         <indexes>
@@ -12,6 +12,13 @@
             <valueindex compressed="false" concurrent="true" elementName="userId" name="userId" unique="false" valuetype="string" version-info="false"/>
         </indexes>
     </librarychild>
+    <librarychild path="/DATA/AllScripts/Collection/WORKS/ACT_HDR_RESULT">
+        <indexes>
+            <multipathindex compressed="false" concurrent="false" lowercase="true" name="Multi-Path index" path="/CT_HDR_RESULT-ROW" stopwords="true" storeversioninfo="false" unique="false" version-info="false">
+                <subpath fulltextsearch="true" scoreboost="1.0" type="string" xpath="//*"/>
+            </multipathindex>
+        </indexes>
+    </librarychild>
     <librarychild path="/DATA/AllScripts/Collection/WORKS/PATIENT_IORG">
         <indexes>
             <pathvalueindex compressed="false" concurrent="false" name="Path value index" path="/PATIENT_IORG/PATIENT_IORG-ROW/PersonID&lt;STRING&gt;" unique="false" version-info="false"/>
@@ -22,8 +29,8 @@
             <multipathindex compressed="false" concurrent="true" lowercase="true" name="person multi path" path="/PERSON/PERSON-ROW" stopwords="true" storeversioninfo="false" unique="false" version-info="false">
                 <subpath fulltextsearch="true" includedescendants="true" scoreboost="1.0" sortable="true" type="string" valuecomparison="true" xpath="/FirstName"/>
                 <subpath fulltextsearch="true" includedescendants="true" scoreboost="1.0" sortable="true" type="string" valuecomparison="true" xpath="/LastName"/>
-                <subpath scoreboost="2.0" sortable="true" type="string" valuecomparison="true" xpath="/MiddleName"/>
-                <subpath scoreboost="3.0" type="string" valuecomparison="true" xpath="/DateOfBirth"/>
+                <subpath scoreboost="1.0" sortable="true" type="string" valuecomparison="true" xpath="/MiddleName"/>
+                <subpath scoreboost="1.0" type="string" valuecomparison="true" xpath="/DateOfBirth"/>
             </multipathindex>
         </indexes>
     </librarychild>

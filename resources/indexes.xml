@@ -8,7 +8,6 @@
     </librarychild>
     <librarychild path="/DATA/AllScripts/Collection/AuditTrail">
         <indexes>
-            <valueindex compressed="false" concurrent="false" elementName="year" elementURI="year" name="year" unique="false" valuetype="string" version-info="false"/>
             <valueindex compressed="false" concurrent="true" elementName="time" name="time" unique="false" valuetype="string" version-info="false"/>
             <valueindex compressed="false" concurrent="true" elementName="userId" name="userId" unique="false" valuetype="string" version-info="false"/>
         </indexes>

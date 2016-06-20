@@ -1,4 +1,4 @@
-<?xml version="61.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <manifest databaseName="AllScripts">
     <librarychild path="/DATA/AllScripts/Collection">
         <indexes>
@@ -14,6 +14,7 @@
     </librarychild>
     <librarychild path="/DATA/AllScripts/Collection/WORKS/ACT_HDR_RESULT">
         <indexes>
+            <fulltextindex alltext="false" compressed="false" concurrent="false" elementName="asd" elementURI="asd" includeattributes="false" includestartendtokens="false" lowercase="true" name="Full text index" stopwords="true" supportphrases="true" supportprefixwildcard="false" supportscoring="false" unique="false" version-info="false"/>
             <multipathindex compressed="false" concurrent="false" lowercase="true" name="Multi-Path index" path="/CT_HDR_RESULT-ROW" stopwords="true" storeversioninfo="false" unique="false" version-info="false">
                 <subpath fulltextsearch="true" scoreboost="1.0" type="string" xpath="//*"/>
             </multipathindex>

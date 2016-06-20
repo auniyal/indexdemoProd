@@ -9,7 +9,6 @@
     <librarychild path="/DATA/AllScripts/Collection/AuditTrail">
         <indexes>
             <pathvalueindex compressed="false" concurrent="false" name="NEW_INDEX" path="/NEW_INDEX&lt;STRING&gt;" unique="false" version-info="false"/>
-            <pathvalueindex compressed="false" concurrent="false" name="New_INDEX_22" path="/New_INDEX_22&lt;STRING&gt;" unique="false" version-info="false"/>
             <valueindex compressed="false" concurrent="true" elementName="time" name="time" unique="false" valuetype="string" version-info="false"/>
             <valueindex compressed="false" concurrent="true" elementName="userId" name="userId" unique="false" valuetype="string" version-info="false"/>
         </indexes>

@@ -1,4 +1,4 @@
-<?xml version="7.0" encoding="UTF-8"?>
+<?xml version="8.0" encoding="UTF-8"?>
 <manifest databaseName="AllScripts">
     <librarychild path="/DATA/AllScripts/Collection">
         <indexes>
